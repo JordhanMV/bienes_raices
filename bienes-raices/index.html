@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-variant":"#d3e4fe","on-tertiary":"#ffffff","outline-variant":"#e6bdb8","surface-container-high":"#dce9ff","tertiary":"#b50436","on-secondary":"#ffffff","tertiary-fixed":"#ffdadb","background":"#f8f9ff","on-secondary-container":"#5c647a","on-secondary-fixed":"#131b2e","on-background":"#0b1c30","on-primary-fixed":"#410002","on-secondary-fixed-variant":"#3f465c","secondary-fixed":"#dae2fd","outline":"#916f6b","on-primary":"#ffffff","on-tertiary-fixed":"#40000d","on-tertiary-container":"#fff7f6","primary-fixed":"#ffdad6","surface-bright":"#f8f9ff","error-container":"#ffdad6","surface-container-low":"#eff4ff","on-primary-fixed-variant":"#93000b","on-surface":"#0b1c30","on-error-container":"#93000a","inverse-on-surface":"#eaf1ff","on-tertiary-fixed-variant":"#920029","error":"#ba1a1a","on-surface-variant":"#5c403c","secondary":"#565e74","surface":"#f8f9ff","surface-container":"#e5eeff","secondary-fixed-dim":"#bec6e0","on-error":"#ffffff","inverse-primary":"#ffb4ab","secondary-container":"#dae2fd","surface-dim":"#cbdbf5","surface-container-lowest":"#ffffff","tertiary-container":"#d82b4c","surface-container-highest":"#d3e4fe","primary-container":"#dc2626","on-primary-container":"#fff6f5","primary-fixed-dim":"#ffb4ab","primary":"#b70011","tertiary-fixed-dim":"#ffb2b7","inverse-surface":"#213145","surface-tint":"#bf0715"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-mobile":"1rem",gutter:"1.5rem","space-xl":"2.5rem","margin-mobile":"1.25rem","space-xs":"0.25rem","space-sm":"0.5rem","space-md":"1rem","space-lg":"1.5rem",margin:"3rem","space-2xl":"4rem"},fontFamily:{"label-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"title-property":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Inter"],"display-hero-mobile":["Plus Jakarta Sans"]},fontSize:{"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.05em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.005em",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"title-property":["18px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.025em",fontWeight:"700"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"700"}],"headline-xl-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"400"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"800"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><img alt="HabitatRed Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VJpPUyiRxzsTUufbS5ZmrQ-en2IRiSHEGpeWAAd6ac30is-CKe2aXphqJYs1yDoaxBVSevxJ3xA27q9kte5DzfwjSGgNGvl7KSPc3A2jD9u5F2EoZyVnhy9xnwM27ZrPxGyivneW45tFltx7iXmfmv2u7XeoMSPzu5g7Sh-slZ9FSHBp31jyyGKNUiTwtEGewyeWbr2QjcAaxm3FMPvFJHtBQMINDn7M4_YXaq89gT7w"/><div class="flex flex-col leading-none"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">Habitat<span class="text-primary-container">Red</span></span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Bienes Raíces</span></div></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-label-lg font-bold border-b-2 border-primary"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="comprar-casas" href="#">Comprar Casas</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="rentar-departamentos" href="#">Rentar Departamentos</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="lotes-y-terrenos" href="#">Lotes y Terrenos</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="desarrollos-residenciales" href="#">Desarrollos Residenciales</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="vender-propiedad" href="#">Vender Propiedad</a></nav><div class="flex items-center gap-space-md shrink-0"><button aria-label="Buscar inmuebles" class="hidden lg:flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-body-md">search</span><span class="font-label-md text-label-md hidden 2xl:inline">Buscar zona o ID...</span><kbd class="hidden 2xl:inline font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary shadow-[0_1px_2px_rgba(0,0,0,0.05)]">⌘K</kbd></button><div class="relative"><button aria-label="Contacto Asesor WhatsApp" class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-title-property">chat</span></button><span class="absolute top-0 right-0 flex h-3 w-3"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-primary-container"></span></span></div><div class="hidden md:flex items-center gap-space-sm pl-space-xs"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4m-C_QTagiQeN-wYD92gR3aa_q9eD8LghjSApcOpENnYfYjm3ySeDZztyawiEP93MbR8UrZarUrfqpiSg4EYo_og82dRX9CmIiMWnL4Eiv-SsSfaBNbF0Qz9rC4Mg12__1HWYLM7SMFMkgR2FEINBs_eU2_11jgr9vc9fVHkWYwK2VpWrE5VEeYuABaP32JpDvG5DxK8o8XuZ2hU9jR3cp06UoBeC-ypSqT2nVL9U"/><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-surface-container-lowest"></span></div><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface leading-tight font-bold">Asesor en línea</span><span class="font-label-sm text-label-sm text-secondary">Atención Premium</span></div></div><a class="hidden sm:inline-flex items-center justify-center px-space-lg py-2.5 rounded-lg bg-primary-container hover:bg-tertiary-container text-on-primary font-label-lg text-label-lg transition-all shadow-[0_2px_8px_rgba(220,38,38,0.25)] active:scale-95" data-path="publicar-propiedad" href="#">Publicar Propiedad</a></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden pb-space-2xl">
+<!-- Ambient architectural photography backdrop with layered gradient scrim -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center brightness-[0.92] contrast-[1.05]" data-alt="Editorial luxury modernist villa exterior with cantilevered concrete terraces, floor-to-ceiling glass pavilions, warm twilight interior illumination, infinity reflection pool, manicured emerald lawn, ultra-sharp architectural monograph aesthetic, crimson warm accents" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBrYTy1HIp-9JC6l3YdAzMhiNf8esOPJC3UpuymVM0J34d-UdGT0xljU-WuSeLYVqVnkedS-gt0wGH05Jek5ct7wikp00gu7_h9EAdfBpdW-oRank5vpQu26EViU69A66lyfQ25xkiEhbLlJd7XTpkP-KRD0APswq66NnxlUwMOyuriEEebp-4YML19w0IxY9asGiOvLgb84o28Nr53bVIaLWEy1V368nlB8weO5uGO')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-b from-surface-container-lowest/80 via-surface-container-lowest/60 to-background backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-margin pt-space-xl">
+<!-- Title & Value Badge -->
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="flex h-2 w-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Líderes en Adquisición Patrimonial &amp; Inversión</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-tight">
+          Encuentra tu próximo hogar o <br class="hidden sm:inline"/>
+<span class="text-primary-container">inversión inmobiliaria</span> perfecta
+        </h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl">
+          Casas residenciales, departamentos de lujo y terrenos campestres listos para escriturar con la asesoría jurídica y comercial más confiable de México.
+        </p>
+</div>
+<!-- Interactive Multi-Category Search Widget -->
+<div class="mt-space-xl max-w-5xl mx-auto">
+<div class="bg-surface-container-lowest rounded-2xl shadow-xl p-space-md md:p-space-lg backdrop-blur-xl">
+<!-- Segmented Filter Tabs -->
+<div class="flex flex-wrap items-center gap-space-xs pb-space-md">
+<button class="search-tab active px-space-lg py-2.5 rounded-xl font-label-lg text-label-lg transition-all bg-primary-container text-on-primary shadow-sm flex items-center gap-2" data-tab="comprar" type="button">
+<span class="material-symbols-outlined text-base">villa</span> Comprar Casas
+            </button>
+<button class="search-tab px-space-lg py-2.5 rounded-xl font-label-lg text-label-lg transition-all text-secondary hover:text-on-surface hover:bg-surface-container-low flex items-center gap-2" data-tab="rentar" type="button">
+<span class="material-symbols-outlined text-base">apartment</span> Rentar Departamentos
+            </button>
+<button class="search-tab px-space-lg py-2.5 rounded-xl font-label-lg text-label-lg transition-all text-secondary hover:text-on-surface hover:bg-surface-container-low flex items-center gap-2" data-tab="lotes" type="button">
+<span class="material-symbols-outlined text-base">landscape</span> Lotes y Terrenos
+            </button>
+<button class="search-tab px-space-lg py-2.5 rounded-xl font-label-lg text-label-lg transition-all text-secondary hover:text-on-surface hover:bg-surface-container-low flex items-center gap-2" data-tab="preventas" type="button">
+<span class="material-symbols-outlined text-base">domain_add</span> Desarrollos en Preventa
+            </button>
+</div>
+<!-- Input Fields Form -->
+<form class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-sm items-center" onsubmit="return false;">
+<!-- Zone / Location Input -->
+<div class="lg:col-span-4 relative flex flex-col justify-center bg-surface-container-low rounded-xl px-space-md py-2.5">
+<label class="font-label-sm text-label-sm text-secondary uppercase flex items-center gap-1" for="search-location">
+<span class="material-symbols-outlined text-xs text-primary-container">location_on</span> Ubicación o Zona
+              </label>
+<select class="bg-transparent font-title-property text-on-surface font-semibold text-sm focus:outline-none cursor-pointer mt-0.5" id="search-location">
+<option value="todos">Todas las zonas metropolitanas</option>
+<option value="san-pedro">San Pedro Garza García, NL</option>
+<option value="polanco">Polanco / Lomas de Chapultepec, CDMX</option>
+<option value="cancun">Cancún / Riviera Maya, Q. Roo</option>
+<option value="queretaro">Juriquilla / El Campanario, Qro</option>
+<option value="zapopan">Puerta de Hierro, Guadalajara, Jal</option>
+</select>
+</div>
+<!-- Property Typology -->
+<div class="lg:col-span-3 relative flex flex-col justify-center bg-surface-container-low rounded-xl px-space-md py-2.5">
+<label class="font-label-sm text-label-sm text-secondary uppercase flex items-center gap-1" for="search-type">
+<span class="material-symbols-outlined text-xs text-secondary">home_work</span> Tipo de Inmueble
+              </label>
+<select class="bg-transparent font-title-property text-on-surface font-semibold text-sm focus:outline-none cursor-pointer mt-0.5" id="search-type">
+<option value="casa">Residencia Unifamiliar</option>
+<option value="depto">Departamento de Lujo</option>
+<option value="penthouse">Penthouse Panorámico</option>
+<option value="terreno">Lote Campestre / Comercial</option>
+</select>
+</div>
+<!-- Price & Surface Range -->
+<div class="lg:col-span-3 relative flex flex-col justify-center bg-surface-container-low rounded-xl px-space-md py-2.5">
+<label class="font-label-sm text-label-sm text-secondary uppercase flex items-center gap-1" for="search-budget">
+<span class="material-symbols-outlined text-xs text-secondary">payments</span> Presupuesto Estimado
+              </label>
+<select class="bg-transparent font-title-property text-on-surface font-semibold text-sm focus:outline-none cursor-pointer mt-0.5" id="search-budget">
+<option value="any">Cualquier presupuesto</option>
+<option value="1-3">$2M - $5M MXN</option>
+<option value="3-7">$5M - $10M MXN</option>
+<option value="7-15">$10M - $25M MXN</option>
+<option value="15+">Más de $25M MXN / $1M+ USD</option>
+</select>
+</div>
+<!-- Main CTA Button -->
+<div class="lg:col-span-2">
+<button class="w-full h-[58px] bg-primary-container hover:bg-tertiary-container text-on-primary font-label-lg text-label-lg rounded-xl flex items-center justify-center gap-2 shadow-[0_8px_20px_rgba(220,38,38,0.28)] transition-all active:scale-98" type="button">
+<span class="material-symbols-outlined text-lg">search</span>
+<span>Buscar</span>
+</button>
+</div>
+</form>
+<!-- Quick Filter Tags Carousel -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center gap-space-xs text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wide mr-1 text-on-surface">Filtros rápidos:</span>
+<button class="quick-filter-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-xs text-primary-container">bolt</span> Entrega Inmediata
+            </button>
+<button class="quick-filter-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-xs text-primary-container">pool</span> Alberca Privada
+            </button>
+<button class="quick-filter-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-xs text-primary-container">verified</span> Acepta Crédito Bancario
+            </button>
+<button class="quick-filter-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-xs text-primary-container">water</span> Vista al Mar
+            </button>
+<button class="quick-filter-chip px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-xs text-primary-container">shield</span> Seguridad Privada 24/7
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CATEGORÍAS DESTACADAS -->
+<section class="w-full max-w-[1440px] mx-auto px-margin py-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider font-bold">Portafolio Especializado</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">Explora por Tipo de Propiedad</h2>
+</div>
+<a class="inline-flex items-center gap-1 text-primary-container hover:text-tertiary font-label-lg text-label-lg transition-colors group" href="#">
+        Ver catálogo completo
+        <span class="material-symbols-outlined text-base transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card Categoria 1 -->
+<a class="group relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" href="#">
+<div class="h-48 w-full overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Modernist luxury residential home with glass facade and illuminated private entrance at dusk, crimson soft ambient accents" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_AFLhobKWVV44omz4w5oLdQuB8l_V3O5IC2t7ZzEmZCWooqOdEioDUmybojHym-v6o-CWh5VMwqHQwzQD2_HYotbaxNJ7g1vmm_hhYhBRriF6pINaMrB9m34vzM6Woa6HnMa6-HtPOeI8hkeuBNO4SKbCzbLZbyz5mt587SMP0FOfLMMC658KySTV595w9FA7TGKTFntnw90vQKAOdgoYscVUmCsmVmQD-9xucE3H')">
+</div>
+<span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm text-on-surface font-bold">1,240 Disponibles</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow">
+<div>
+<h3 class="font-title-property text-title-property text-on-surface font-bold group-hover:text-primary-container transition-colors">Casas Residenciales</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Residencias unifamiliares, privadas con caseta y villas de descanso.</p>
+</div>
+<div class="mt-4 flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">Desde $3.2M MXN</span>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-sm">east</span>
+</span>
+</div>
+</div>
+</a>
+<!-- Card Categoria 2 -->
+<a class="group relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" href="#">
+<div class="h-48 w-full overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Interior of a luxury penthouse apartment with panoramic skyline view, minimalist Scandinavian furniture and polished stone finishes" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbMaHqk_IvxsyFaMzb8v6nK6ooxLVmZDiiyyMQ4dD3auwE-3EZ6WT-0q-YTE1YQEoiOxNBMXwbIMbyHw8FkGX9x6UMJ0g9wEsFtC9bfS_LhcpefbhNllXY6aV81x4oqTp61jvNvJt0Fy39wd3IaOQ-0GqBqZSJkptCanTUy7T-GMRN_4UPfJfkU4meqdimSV9t4ws3-hJIe_oNOkRRCubP2ENdR-Pn1R7l_oZRalgo')">
+</div>
+<span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm text-on-surface font-bold">850 Unidades</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow">
+<div>
+<h3 class="font-title-property text-title-property text-on-surface font-bold group-hover:text-primary-container transition-colors">Departamentos &amp; Lofts</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Ubicaciones urbanas estratégicas, torres corporativas y amenidades completas.</p>
+</div>
+<div class="mt-4 flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">Rentas desde $18,000/mes</span>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-sm">east</span>
+</span>
+</div>
+</div>
+</a>
+<!-- Card Categoria 3 -->
+<a class="group relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" href="#">
+<div class="h-48 w-full overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Lush green residential development parcel with paved streets, modern streetlamps, surrounding pine forest and distant mountain ridges" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDbJnOs5qCo1KUEqTlaVuV4ZLDU5HhC-0pfB6Mjt7XpVB_UJ-eLHjvLWU-eghkN3CfJdphw-RJ4SWPtsoVSeFxuazIf9JPfMjybvd--PGmU6eMD8V3z0U3ZN9AUO9yWL3wYPYTPYgMzawtLkFtlf-GxVl7KElQbGG3Z7n_b7NUqfNzIpw3Ba8FK8Te4WO5sCGZSg8zKAykIxUimfr_MGHdPlEAl-M7zEIEnISiWZNwa')">
+</div>
+<span class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm text-on-surface font-bold">420 Lotes Listos</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow">
+<div>
+<h3 class="font-title-property text-title-property text-on-surface font-bold group-hover:text-primary-container transition-colors">Lotes y Terrenos</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Terrenos campestres y lotes comerciales con servicios subterráneos y escrituración.</p>
+</div>
+<div class="mt-4 flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">Desde $1,850/m²</span>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-sm">east</span>
+</span>
+</div>
+</div>
+</a>
+<!-- Card Categoria 4 -->
+<a class="group relative rounded-2xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col" href="#">
+<div class="h-48 w-full overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Architectural masterplan render of a master-planned luxury mixed-use residential development with walking plazas, club house and green parklands" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAa5K3iZjefopK-cXCWs_IqFYkd80NV_jqtX9eg6NgiEG1kYLK3YxlFFSGIUAMkAf0BJxOL6t7UXRmLprp4MPHCZVEw4czk6NzQzmqYdpnHKKNLhxjDxMkhJiv7t-59DBZwgfllig3p3J-lMCUP4DmcLSsTj-B0Nmxkit-m4Lsyo-rHVdfFkwYOhbVPWSWxr-h3DsCKudoIM_yD8X3pxRQm90gM_Jk3zt1DHbbK5GUP')">
+</div>
+<span class="absolute top-3 left-3 bg-primary-container text-on-primary px-2.5 py-1 rounded-full font-label-sm text-label-sm font-bold">35 Preventas</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow">
+<div>
+<h3 class="font-title-property text-title-property text-on-surface font-bold group-hover:text-primary-container transition-colors">Desarrollos Exclusivos</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Proyectos en preventa con esquemas de financiamiento directo y plusvalía garantizada.</p>
+</div>
+<div class="mt-4 flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">Planes sin intereses</span>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-sm">east</span>
+</span>
+</div>
+</div>
+</a>
+</div>
+</section>
+<!-- PROPIEDADES DESTACADAS -->
+<section class="w-full max-w-[1440px] mx-auto px-margin py-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-4">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-primary-container/10 text-primary-container font-label-sm text-label-sm mb-2">
+<span class="material-symbols-outlined text-xs">local_fire_department</span>
+<span>Selección Exclusiva de la Semana</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Propiedades Destacadas</h2>
+</div>
+<!-- Tab pills for fast filtering -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1">
+<button class="px-4 py-2 rounded-full bg-on-surface text-surface font-label-sm text-label-sm" type="button">Todas</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-secondary hover:text-on-surface font-label-sm text-label-sm" type="button">En Venta</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-secondary hover:text-on-surface font-label-sm text-label-sm" type="button">En Renta</button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-secondary hover:text-on-surface font-label-sm text-label-sm" type="button">Oportunidades</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Property Card 1 -->
+<article class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[16/11] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Ultra-luxurious two-story contemporary mansion with private illuminated swimming pool, wooden sun deck, open plan living pavilion in Las Cumbres" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqEdrnMLxttX-tOUozs5GvzNcpLlFy2DTSLxaiYqizUAIG19vcJq3t1KFs_U0H7HG8hvRcn_l3LVYUAbMSmig4WOBr8uOp3LmXKYWg9P_c2oNfLVDQ3fqgTiMeGyd-O41-qSiHwSlSDBZEjnyGZ9tVJ5uOC2a-2tm6U_Z73GkaiDbiNuaqrVIyhjfWrpedoA3tZM3DsneYKLAOLKs7ib18pNm3n9n9mJ-8sGVZF2df')">
+</div>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-primary-container text-on-primary font-label-sm text-label-sm font-bold uppercase shadow-sm">Destacado</span>
+<span class="px-2 py-1 rounded-md bg-on-surface/80 backdrop-blur-md text-surface font-label-sm text-label-sm">Venta</span>
+</div>
+<button aria-label="Favorito" class="favorite-toggle absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary hover:text-primary-container transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-lg">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">$8,450,000 <span class="text-body-sm font-normal text-secondary">MXN</span></span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mb-1">
+<span class="material-symbols-outlined text-sm text-primary-container">pin_drop</span>
+<span>Las Cumbres Residencial, Monterrey, NL</span>
+</div>
+<h3 class="font-title-property text-title-property text-on-surface font-bold line-clamp-1 group-hover:text-primary-container transition-colors">
+              Residencia Moderna Las Cumbres
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1.5 line-clamp-2">
+              Arquitectura de autor con acabados en mármol Santo Tomás, cocina de diseñador y alberca privada climatizada.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t-0 bg-surface-container-low/50 rounded-xl p-2.5 flex items-center justify-around text-secondary font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-on-surface">bed</span>
+<span>4 Rec</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-on-surface">bathtub</span>
+<span>4.5 Bñ</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-on-surface">square_foot</span>
+<span>380 m²</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2">
+<button class="flex-1 py-2.5 px-3 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface font-label-lg text-label-lg transition-colors text-center" type="button">
+              Ver Detalles
+            </button>
+<button aria-label="Contactar Asesor" class="w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-base">chat</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Property Card 2 -->
+<article class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[16/11] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Luxury high-rise apartment living room with expansive floor-to-ceiling glass corner window viewing metropolitan towers at sunset, warm red accents in decor" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_yYYtv_k76pGy6iTmcGUaeRaXCuB5LC90g4hyPcMPEQKDyQ0csF-cG0b1Y7wocLmI1yLNbpQAcP9Zv9JQI1DTHOqxG82dUWz8BqMMU-4RyS5QE6TjVf6H24-Swc6uXipGEOd8AzHHf_QusJnyiiLn3xKsAOYj9Zm3wmz_DFPVXRIXz3mh2DRE07csxIvz5KPDE5x9IsA_mE3siYaEsbpAiLtyT9wsANT7yi2xtTcY')">
+</div>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-emerald-600 text-on-primary font-label-sm text-label-sm font-bold uppercase shadow-sm">Nuevo</span>
+<span class="px-2 py-1 rounded-md bg-on-surface/80 backdrop-blur-md text-surface font-label-sm text-label-sm">Renta</span>
+</div>
+<button aria-label="Favorito" class="favorite-toggle absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary hover:text-primary-container transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-lg">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">$32,000 <span class="text-body-sm font-normal text-secondary">MXN / mes</span></span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mb-1">
+<span class="material-symbols-outlined text-sm text-primary-container">pin_drop</span>
+<span>Polanco V Sección, Miguel Hidalgo, CDMX</span>
+</div>
+<h3 class="font-title-property text-title-property text-on-surface font-bold line-clamp-1 group-hover:text-primary-container transition-colors">
+              Sky Tower Departamento Luxury
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1.5 line-clamp-2">
+              Completamente amueblado con diseño de autor, piso 18 con vista panorámica, gimnasio, spa y concierge 24h.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t-0 bg-surface-container-low/50 rounded-xl p-2.5 flex items-center justify-around text-secondary font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-on-surface">bed</span>
+<span>2 Rec</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-on-surface">bathtub</span>
+<span>2 Baños</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-on-surface">square_foot</span>
+<span>120 m²</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2">
+<button class="flex-1 py-2.5 px-3 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface font-label-lg text-label-lg transition-colors text-center" type="button">
+              Ver Detalles
+            </button>
+<button aria-label="Contactar Asesor" class="w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-base">chat</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Property Card 3 -->
+<article class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[16/11] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Wide panoramic vista of premium gated country club community with mature trees, stone paved avenues, golf fairway view and modern club house" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCmJvTt0yfER-JCZW68vo29mag5QVYrvmO1fet_LWOYDFHJkm-MnoiENFHQ96O36_-_KS6qJmbi0oqiTPC5-zvqsDo3CI30Vw5qqn3r4PF-hjGivGUeNkBu-9O77KRp4mT9eTc1XUpf0PvD1MA8VFDBeHpAnqaU5a3rvRopZXtiqyVcvL9sS0xURg3MYONf8BwT2Srt3dxIw7E3yiXQ6GgXiwCRTJtNVnJUCQvnnzR2')">
+</div>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-amber-600 text-on-primary font-label-sm text-label-sm font-bold uppercase shadow-sm">Gran Oportunidad</span>
+<span class="px-2 py-1 rounded-md bg-on-surface/80 backdrop-blur-md text-surface font-label-sm text-label-sm">Terreno</span>
+</div>
+<button aria-label="Favorito" class="favorite-toggle absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary hover:text-primary-container transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-lg">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">$2,950,000 <span class="text-body-sm font-normal text-secondary">MXN</span></span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mb-1">
+<span class="material-symbols-outlined text-sm text-primary-container">pin_drop</span>
+<span>Bosque Real Country Club, Huixquilucan, Edomex</span>
+</div>
+<h3 class="font-title-property text-title-property text-on-surface font-bold line-clamp-1 group-hover:text-primary-container transition-colors">
+              Lote Residencial Bosque Real
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1.5 line-clamp-2">
+              Terreno regular frente a área verde, topografía óptima para proyecto en desniveles con alta plusvalía patrimonial.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t-0 bg-surface-container-low/50 rounded-xl p-2.5 flex items-center justify-around text-secondary font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-on-surface">landscape</span>
+<span>500 m²</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-on-surface">golf_course</span>
+<span>Club House</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-on-surface">verified_user</span>
+<span>Escriturado</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2">
+<button class="flex-1 py-2.5 px-3 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface font-label-lg text-label-lg transition-colors text-center" type="button">
+              Ver Detalles
+            </button>
+<button aria-label="Contactar Asesor" class="w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-base">chat</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Property Card 4 -->
+<article class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+<div class="relative w-full aspect-[16/11] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Opulent white stone Mexican contemporary villa with double height glass windows, integrated barbecue terrace and landscaped succulent garden in San Pedro" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAx8EJg3391PU0GIZBiKv-zCaTPy_v-tjv9kORz_BlEWiFOE7PRzUdHzyHn1jiAzYQFw8sAXkDfl7gnKHRgW3L2puQJBHZm_BTM_B4BK_R8vpq3jJWeEsDti2WuiTW6BenT-0YCGZ_eZr4IUHYikv_Ewe_94hdyhuYUdrkr7yUCFZ0iPVFFI9-kBlPCSV6zqVN2pxOt1Hmlbso0WvO3m9NcczTApM1SueKJAQ_RCpFv')">
+</div>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-primary-container text-on-primary font-label-sm text-label-sm font-bold uppercase shadow-sm">Precio Rebajado</span>
+<span class="px-2 py-1 rounded-md bg-on-surface/80 backdrop-blur-md text-surface font-label-sm text-label-sm">Venta</span>
+</div>
+<button aria-label="Favorito" class="favorite-toggle absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary hover:text-primary-container transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-lg">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">$12,800,000 <span class="text-body-sm font-normal text-secondary">MXN</span></span>
+</div>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow">
+<div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mb-1">
+<span class="material-symbols-outlined text-sm text-primary-container">pin_drop</span>
+<span>Valle Oriente, San Pedro Garza García, NL</span>
+</div>
+<h3 class="font-title-property text-title-property text-on-surface font-bold line-clamp-1 group-hover:text-primary-container transition-colors">
+              Villa del Valle Contemporánea
+            </h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1.5 line-clamp-2">
+              5 recámaras en suite, master con vestidor doble, terraza techada con asador de acero inoxidable y 4 estacionamientos.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t-0 bg-surface-container-low/50 rounded-xl p-2.5 flex items-center justify-around text-secondary font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-on-surface">bed</span>
+<span>5 Rec</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-on-surface">bathtub</span>
+<span>6 Baños</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-on-surface">square_foot</span>
+<span>520 m²</span>
+</div>
+</div>
+<div class="mt-4 flex items-center gap-2">
+<button class="flex-1 py-2.5 px-3 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary text-on-surface font-label-lg text-label-lg transition-colors text-center" type="button">
+              Ver Detalles
+            </button>
+<button aria-label="Contactar Asesor" class="w-10 h-10 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-base">chat</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- CALCULADORA HIPOTECARIA EXPRESS (Interactive Tool) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin py-space-xl">
+<div class="bg-surface-container rounded-3xl p-space-lg md:p-space-2xl shadow-sm relative overflow-hidden">
+<!-- Background subtle crimson glow decoration -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-primary-container/5 blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+<!-- Text intro and inputs -->
+<div class="lg:col-span-7 flex flex-col space-y-space-md">
+<div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-surface-container-lowest text-primary-container font-label-sm text-label-sm mb-2 font-bold">
+<span class="material-symbols-outlined text-xs">calculate</span>
+              Simulador Financiero
+            </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Calculadora Hipotecaria Express</h2>
+<p class="font-body-md text-body-md text-secondary mt-2">
+              Proyecta tu pago mensual en segundos con tasas bancarias preferenciales desde 9.85% anual fija.
+            </p>
+</div>
+<!-- Controls -->
+<div class="space-y-space-md bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm">
+<!-- Property Value Slider -->
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<span class="font-label-lg text-label-lg text-on-surface">Valor de la propiedad</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container" id="slider-val-display">$5,000,000 MXN</span>
+</div>
+<input class="w-full accent-primary-container cursor-pointer" id="calc-price" max="25000000" min="1000000" step="250000" type="range" value="5000000"/>
+<div class="flex justify-between text-secondary font-label-sm text-label-sm">
+<span>$1,000,000</span>
+<span>$25,000,000</span>
+</div>
+</div>
+<!-- Down payment percentage selector -->
+<div class="space-y-2">
+<div class="flex justify-between items-center">
+<span class="font-label-lg text-label-lg text-on-surface">Enganche aportado</span>
+<span class="font-title-property text-title-property font-semibold text-on-surface" id="calc-down-display">$1,000,000 MXN (20%)</span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="down-btn py-2 rounded-lg bg-surface-container text-secondary font-label-md text-label-md" data-pct="10" type="button">10%</button>
+<button class="down-btn active py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-bold" data-pct="20" type="button">20%</button>
+<button class="down-btn py-2 rounded-lg bg-surface-container text-secondary font-label-md text-label-md" data-pct="25" type="button">25%</button>
+<button class="down-btn py-2 rounded-lg bg-surface-container text-secondary font-label-md text-label-md" data-pct="30" type="button">30%</button>
+</div>
+</div>
+<!-- Term selector -->
+<div class="space-y-2">
+<span class="font-label-lg text-label-lg text-on-surface block">Plazo del financiamiento</span>
+<div class="grid grid-cols-4 gap-2">
+<button class="term-btn py-2 rounded-lg bg-surface-container text-secondary font-label-md text-label-md" data-years="5" type="button">5 años</button>
+<button class="term-btn py-2 rounded-lg bg-surface-container text-secondary font-label-md text-label-md" data-years="10" type="button">10 años</button>
+<button class="term-btn py-2 rounded-lg bg-surface-container text-secondary font-label-md text-label-md" data-years="15" type="button">15 años</button>
+<button class="term-btn active py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-bold" data-years="20" type="button">20 años</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Result Card Preview -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-2xl p-space-xl shadow-lg flex flex-col justify-between h-full">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-1">Pago Mensual Estimado</span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-hero text-display-hero text-on-surface font-extrabold" id="calc-monthly">$38,240</span>
+<span class="font-body-md text-body-md text-secondary">MXN / mes*</span>
+</div>
+<div class="mt-space-md space-y-space-sm pt-space-md bg-surface-container-low/60 rounded-xl p-space-md">
+<div class="flex justify-between items-center text-sm">
+<span class="text-secondary">Monto del Préstamo:</span>
+<span class="font-bold text-on-surface" id="res-loan">$4,000,000 MXN</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-secondary">Tasa Anual Estimada:</span>
+<span class="font-bold text-emerald-600">9.85% fija anual</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-secondary">Seguro de vida y daños:</span>
+<span class="font-bold text-on-surface">Incluido</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-3 text-xs leading-relaxed">
+              *Valores informativos. Sujetos a aprobación crediticia y avalúo comercial. Trabajamos con los 7 bancos líderes del país.
+            </p>
+</div>
+<div class="mt-space-lg space-y-2">
+<button class="w-full py-3.5 px-space-md rounded-xl bg-primary-container hover:bg-tertiary-container text-on-primary font-label-lg text-label-lg font-bold transition-all shadow-[0_4px_16px_rgba(220,38,38,0.25)] flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-lg">verified</span>
+              Pre-calificar Mi Crédito en 24h
+            </button>
+<span class="block text-center font-label-sm text-label-sm text-secondary">Sin costo ni impacto en tu score de Buró</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- POR QUÉ ELEGIR HABITATRED (Trust & Metrics) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin py-space-xl">
+<div class="text-center max-w-3xl mx-auto mb-space-2xl">
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider font-bold">Respaldo Integral</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">Por Qué Elegir HabitatRed Bienes Raíces</h2>
+<p class="font-body-md text-body-md text-secondary mt-2">
+        Combinamos tecnología de vanguardia, blindaje jurídico y la red de asesores certificados con mayor experiencia en el mercado nacional.
+      </p>
+</div>
+<!-- Value Props 4-Card Bento -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-2xl">
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 text-primary-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-headline-md">gavel</span>
+</div>
+<h3 class="font-title-property text-title-property text-on-surface font-bold mb-2">Asesoría Notarial 100% Segura</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+          Revisión minuciosa de títulos, gravámenes y permisos para garantizar una escrituración limpia y sin sorpresas.
+        </p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 text-primary-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-headline-md">speed</span>
+</div>
+<h3 class="font-title-property text-title-property text-on-surface font-bold mb-2">Aprobación de Crédito en 24h</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+          Broker hipotecario interno para tramitar y comparar ofertas de Santander, BBVA, Banorte, Scotiabank e Infonavit.
+        </p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 text-primary-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-headline-md">price_check</span>
+</div>
+<h3 class="font-title-property text-title-property text-on-surface font-bold mb-2">Valuación Gratuita Inmediata</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+          Algoritmo de machine learning cruzado con avalúos comerciales para determinar el precio más competitivo del mercado.
+        </p>
+</div>
+<div class="p-space-lg bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 text-primary-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-headline-md">360</span>
+</div>
+<h3 class="font-title-property text-title-property text-on-surface font-bold mb-2">Tours Virtuales Inmersivos 360°</h3>
+<p class="font-body-sm text-body-sm text-secondary">
+          Recorre cada rincón de la propiedad desde cualquier lugar del mundo antes de agendar tu visita física.
+        </p>
+</div>
+</div>
+<!-- Big Metric Numbers Banner -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg divide-y md:divide-y-0 md:divide-x divide-surface-container-high text-center">
+<div class="py-space-sm md:py-0">
+<div class="font-display-hero text-display-hero text-primary-container font-extrabold">+12,000</div>
+<div class="font-title-property text-title-property text-on-surface font-bold mt-1">Familias con Hogar Propio</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Operaciones transparentes en más de 20 estados.</p>
+</div>
+<div class="py-space-sm md:py-0">
+<div class="font-display-hero text-display-hero text-on-surface font-extrabold">98.4%</div>
+<div class="font-title-property text-title-property text-on-surface font-bold mt-1">Índice de Recomendación</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Evaluación de clientes tras proceso notarial.</p>
+</div>
+<div class="py-space-sm md:py-0">
+<div class="font-display-hero text-display-hero text-primary-container font-extrabold">$450M+</div>
+<div class="font-title-property text-title-property text-on-surface font-bold mt-1">MXN en Volumen Comercial</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Cerrados de manera exitosa en el último ejercicio.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- TESTIMONIOS Y AGENDAMIENTO RÁPIDO -->
+<section class="w-full max-w-[1440px] mx-auto px-margin py-space-xl pb-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Testimonials Left Column -->
+<div class="lg:col-span-7 space-y-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider font-bold">Experiencias Reales</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">Lo que opinan nuestros compradores</h2>
+</div>
+<!-- Review Card 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm">
+<div class="flex items-center gap-1 text-amber-500 mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            "Compramos nuestra casa en San Pedro a través de HabitatRed. Desde el primer día nos apoyaron a negociar con el desarrollador y nos consiguieron una tasa preferencial con el banco que no habíamos encontrado por nuestra cuenta."
+          </p>
+<div class="mt-4 flex items-center gap-3">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Portrait of successful Mexican businesswoman in modern office smiling confidently with soft corporate lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC80NMO5qMnM1_9nBOYRppfrDMzD0kVoDQxAAD6jNFU3hNGV_sO3ko5wef33aU4_MT4zAF5pNmWzCkyRwevjidJzIybchmkqeDMYDv1dFmZD80DaX4ebfeoTtRKeG0xfc5-K6oGqxcAWcEppx3TTl1dBif2JB-wCWT3pc6EnkOorMDTDnI8Enb_tLxlC-rc4PVEBJ2uXEdlVemPhyDsyY6olkKJDl-lGYNKk9ZP0Fvm"/>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold">Lic. Mariana Garza Treviño</h4>
+<p class="font-body-sm text-body-sm text-secondary">Compradora en Las Cumbres, Mty</p>
+</div>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm">
+<div class="flex items-center gap-1 text-amber-500 mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+            "Puse a la venta mi departamento en Polanco y en menos de 28 días ya teníamos tres ofertas formales con depósito en garantía. Su producción fotográfica y tour virtual marcaron la diferencia absoluta."
+          </p>
+<div class="mt-4 flex items-center gap-3">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Portrait of an architect man in his forties wearing casual black blazer and stylish glasses smiling warmly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ6u8uAVkWMe-flslnLEwSCFxYdD_E_23xVY-OIF3qPHaku-iJjE6rL5fsFJ1M2U-jrMesAr8QZ5IdfWX3UoI2eoTZ_QAmHB09C0NGXmOub_tpirtKl7-1c-IB1J_I7mtJ21yLg_5J8fxB_hProBWbVXRKEfOg87ZLABMj1e017Qg2gBGWKYAyOPSX4AWhYDP1crR7vYoMo00v6bHPJxwZa9S2ZBXlSMBlwyYH8rnK"/>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold">Arq. Rodrigo De La Mora</h4>
+<p class="font-body-sm text-body-sm text-secondary">Propietario en Polanco, CDMX</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Schedule Tour / Direct Form Right Column -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-xl rounded-2xl shadow-lg">
+<div class="flex items-center gap-3 mb-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">support_agent</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Agenda una Visita Guiada</h3>
+<p class="font-body-sm text-body-sm text-secondary">Atención personalizada con un asesor senior</p>
+</div>
+</div>
+<form class="space-y-space-sm" onsubmit="return false;">
+<div>
+<label class="font-label-sm text-label-sm text-secondary uppercase block mb-1" for="contact-name">Nombre Completo</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container" id="contact-name" placeholder="Ej. Carlos Hernández" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-secondary uppercase block mb-1" for="contact-phone">WhatsApp / Teléfono Móvil</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container" id="contact-phone" placeholder="+52 55 1234 5678" type="tel"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-secondary uppercase block mb-1" for="contact-interest">Propiedad de Interés o Zona</label>
+<select class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container cursor-pointer" id="contact-interest">
+<option>Residencia Moderna Las Cumbres</option>
+<option>Sky Tower Departamento Luxury</option>
+<option>Lote Residencial Bosque Real</option>
+<option>Villa del Valle Contemporánea</option>
+<option>Quiero una propuesta personalizada</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-secondary uppercase block mb-1" for="contact-notes">Horario preferido para contactarte</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="flex items-center gap-1.5 p-2 rounded-lg bg-surface-container-low text-on-surface text-xs cursor-pointer">
+<input checked="" class="accent-primary-container" name="horario" type="radio"/> Mañana
+              </label>
+<label class="flex items-center gap-1.5 p-2 rounded-lg bg-surface-container-low text-on-surface text-xs cursor-pointer">
+<input class="accent-primary-container" name="horario" type="radio"/> Tarde
+              </label>
+<label class="flex items-center gap-1.5 p-2 rounded-lg bg-surface-container-low text-on-surface text-xs cursor-pointer">
+<input class="accent-primary-container" name="horario" type="radio"/> Sábado
+              </label>
+</div>
+</div>
+<div class="pt-2">
+<button class="w-full py-3 px-space-md rounded-xl bg-primary-container hover:bg-tertiary-container text-on-primary font-label-lg text-label-lg font-bold transition-all shadow-[0_4px_14px_rgba(220,38,38,0.25)] flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-lg">calendar_month</span>
+              Solicitar Recorrido sin Costo
+            </button>
+</div>
+<div class="text-center pt-1">
+<a class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-emerald-600 hover:text-emerald-700 font-bold transition-colors" href="https://wa.me/5215500000000" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">chat</span> O chatear de inmediato por WhatsApp oficial
+            </a>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Interactive Logic for Tabs, Sliders, and Favorites -->
+<script>
+    // Tab switching for hero search
+    const tabs = document.querySelectorAll('.search-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+          t.classList.add('text-secondary', 'hover:text-on-surface', 'hover:bg-surface-container-low');
+        });
+        tab.classList.remove('text-secondary', 'hover:text-on-surface', 'hover:bg-surface-container-low');
+        tab.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      });
+    });
+
+    // Favorite heart toggle
+    const favButtons = document.querySelectorAll('.favorite-toggle');
+    favButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon.style.fontVariationSettings && icon.style.fontVariationSettings.includes("'FILL' 1")) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          btn.classList.remove('text-primary-container');
+          btn.classList.add('text-secondary');
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          btn.classList.add('text-primary-container');
+          btn.classList.remove('text-secondary');
+        }
+      });
+    });
+
+    // Mortgage Calculator Interactive Logic
+    const slider = document.getElementById('calc-price');
+    const sliderDisplay = document.getElementById('slider-val-display');
+    const downDisplay = document.getElementById('calc-down-display');
+    const monthlyDisplay = document.getElementById('calc-monthly');
+    const loanDisplay = document.getElementById('res-loan');
+    const downButtons = document.querySelectorAll('.down-btn');
+    const termButtons = document.querySelectorAll('.term-btn');
+
+    let currentPrice = 5000000;
+    let downPct = 0.20;
+    let termYears = 20;
+    const annualRate = 0.0985; // 9.85%
+
+    function formatCurrency(val) {
+      return '$' + Math.round(val).toLocaleString('es-MX');
+    }
+
+    function calculateMortgage() {
+      const downAmount = currentPrice * downPct;
+      const loanAmount = currentPrice - downAmount;
+      const monthlyRate = annualRate / 12;
+      const numberOfPayments = termYears * 12;
+
+      // Mortgage formula: M = P [ i(1 + i)^n ] / [ (1 + i)^n – 1]
+      const monthlyPayment = loanAmount * (monthlyRate * Math.pow(1 + monthlyRate, numberOfPayments)) / (Math.pow(1 + monthlyRate, numberOfPayments) - 1);
+
+      sliderDisplay.textContent = formatCurrency(currentPrice) + ' MXN';
+      downDisplay.textContent = `${formatCurrency(downAmount)} MXN (${Math.round(downPct * 100)}%)`;
+      loanDisplay.textContent = formatCurrency(loanAmount) + ' MXN';
+      monthlyDisplay.textContent = formatCurrency(monthlyPayment);
+    }
+
+    if (slider) {
+      slider.addEventListener('input', (e) => {
+        currentPrice = parseFloat(e.target.value);
+        calculateMortgage();
+      });
+    }
+
+    downButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        downButtons.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold');
+          b.classList.add('bg-surface-container', 'text-secondary');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary', 'font-bold');
+        btn.classList.remove('bg-surface-container', 'text-secondary');
+        downPct = parseFloat(btn.dataset.pct) / 100;
+        calculateMortgage();
+      });
+    });
+
+    termButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        termButtons.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold');
+          b.classList.add('bg-surface-container', 'text-secondary');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary', 'font-bold');
+        btn.classList.remove('bg-surface-container', 'text-secondary');
+        termYears = parseInt(btn.dataset.years, 10);
+        calculateMortgage();
+      });
+    });
+
+    // Run initial calculation
+    calculateMortgage();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.03)] pt-space-2xl pb-space-xl"><div class="max-w-[1440px] mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="HabitatRed Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VJpPUyiRxzsTUufbS5ZmrQ-en2IRiSHEGpeWAAd6ac30is-CKe2aXphqJYs1yDoaxBVSevxJ3xA27q9kte5DzfwjSGgNGvl7KSPc3A2jD9u5F2EoZyVnhy9xnwM27ZrPxGyivneW45tFltx7iXmfmv2u7XeoMSPzu5g7Sh-slZ9FSHBp31jyyGKNUiTwtEGewyeWbr2QjcAaxm3FMPvFJHtBQMINDn7M4_YXaq89gT7w"/><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Habitat<span class="text-primary-container">Red</span></span></div><p class="font-body-md text-body-md text-secondary max-w-sm">Plataforma inmobiliaria de alta gama para la adquisición, renta e inversión de desarrollos arquitectónicos selectos y residencias exclusivas.</p><div class="flex items-center gap-space-sm text-secondary"><a aria-label="Ubicación" class="w-9 h-9 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center transition-colors text-on-surface" href="#"><span class="material-symbols-outlined text-body-md">location_on</span></a><a aria-label="Teléfono" class="w-9 h-9 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center transition-colors text-on-surface" href="#"><span class="material-symbols-outlined text-body-md">call</span></a><a aria-label="Correo" class="w-9 h-9 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center transition-colors text-on-surface" href="#"><span class="material-symbols-outlined text-body-md">mail</span></a><a aria-label="Horarios" class="w-9 h-9 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center transition-colors text-on-surface" href="#"><span class="material-symbols-outlined text-body-md">schedule</span></a></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-property text-title-property text-on-surface font-bold">Inmuebles Exclusivos</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-secondary"><li class="hover:text-on-surface transition-colors"><a href="#">Venta de casas en zonas exclusivas</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Renta de departamentos amueblados</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Lotes residenciales de inversión</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Penthouses con vista panorámica</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Villas privadas y campestres</a></li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-property text-title-property text-on-surface font-bold">Servicios y Asesoría</h4><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-secondary"><li class="hover:text-on-surface transition-colors"><a href="#">Valuación inmobiliaria certificada</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Créditos hipotecarios premium</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Gestión legal patrimonial</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Publica tu propiedad</a></li><li class="hover:text-on-surface transition-colors"><a href="#">Directorio de asesores</a></li></ul></div><div class="flex flex-col gap-space-sm"><h4 class="font-title-property text-title-property text-on-surface font-bold">Oportunidades</h4><p class="font-body-sm text-body-sm text-secondary">Suscríbete al boletín privado de preventas e inversiones inmobiliarias.</p><form class="flex flex-col gap-space-xs" onsubmit="return false;"><div class="relative"><input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface placeholder-secondary text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="correo@ejemplo.com" type="email"/><button aria-label="Suscribirme" class="absolute right-1.5 top-1.5 px-space-sm py-1 rounded-md bg-primary-container text-on-primary font-label-sm text-label-sm hover:bg-tertiary-container transition-colors" type="button">Enviar</button></div><span class="font-label-sm text-label-sm text-secondary">Sin spam. Puedes cancelar cuando quieras.</span></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-secondary font-body-sm text-body-sm bg-surface-container-lowest"><p>© 2025 HabitatRed Bienes Raíces. Todos los derechos reservados.</p><div class="flex items-center gap-space-lg font-label-md text-label-md"><a class="hover:text-on-surface transition-colors" href="#">Aviso de Privacidad</a><a class="hover:text-on-surface transition-colors" href="#">Términos y Condiciones</a><a class="hover:text-on-surface transition-colors" href="#">Código de Ética</a></div></div></div></footer></body></html>
